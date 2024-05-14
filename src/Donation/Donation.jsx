@@ -61,38 +61,7 @@ const Donation = () => {
 
                         <div className="col-lg-12 col-md-6 p-0">
                             <div className="all-help-content">
-                                {/* <form>
-                                    <h4>Donation form</h4>
-                                    <div className='donate'>
-                                        <div className='from-g'>
-                                        <p>$</p>
-                                            <input type='text' />
-                                        </div>
-                                        <div className='radio'>
-                                            <div className='from-radio'>
-                                                <input type='radio' className='' />
-                                                <p>$10.00</p>
-                                            </div>
-                                            <div className='from-radio'>
-                                                <input type='radio' />
-                                                <p>$25.00</p>
-                                            </div>
-                                            <div className='from-radio'>
-                                                <input type='radio' />
-                                                <p>$50.00</p>
-                                            </div>
-                                            <div className='from-radio'>
-                                                <input type='radio' />
-                                                <p>$100.00</p>
-                                            </div>
-                                            <div className='from-radio'>
-                                                <input type='radio' />
-                                                <p>other</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </form> */}
+                                
 
 
 

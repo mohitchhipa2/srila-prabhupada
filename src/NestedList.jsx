@@ -29,17 +29,17 @@ export default function NestedList({toggleDrawer}) {
                 {open ? <ExpandLess /> : <ExpandMore />}
             </ListItem>
             <Collapse in={open} timeout="auto" unmountOnExit>
-                <List component="div" disablePadding >
-                    <ListItem button onClick={handleClick2}>
-                        <ListItemText primary="Team"  />
+                <List component="div" disablePadding   >
+                    <ListItem className='pages-list' style={{borderBottom:"2px solid #F1F1F1"}}  button onClick={handleClick2} >
+                        <ListItemText primary="Team" onClick={() => navigate("/team")} />
                     </ListItem>
-                    <ListItem button onClick={handleClick2}>
+                    <ListItem style={{borderBottom:"2px solid #F1F1F1"}} button onClick={handleClick2}>
                         <ListItemText primary="Success Stories" onClick={() => navigate("/events")} />
                     </ListItem>
-                    <ListItem button onClick={handleClick2}>
+                    <ListItem  style={{borderBottom:"2px solid #F1F1F1"}}button onClick={handleClick2}>
                         <ListItemText primary="Become a volunteer" onClick={() => navigate("/becomevolunteer")} />
                     </ListItem>
-                    <ListItem button onClick={handleClick2}>
+                    <ListItem style={{borderBottom:"2px solid #F1F1F1"}} button onClick={handleClick2}>
                         <ListItemText primary="Implementation process" onClick={() => navigate("/implementationProcess")} />
                     </ListItem>
                 </List>

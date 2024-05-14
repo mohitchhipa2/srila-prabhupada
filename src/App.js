@@ -25,6 +25,7 @@ import RecoverPassword from "./Pages/RecoverPassword";
 import Becomevolunteer from "./Pages/Becomevolunteer";
 import Donation from "./Donation/Donation";
 import ImplementationProcess from "./Pages/ImplementationProcess";
+import Volunteer from "./Pages/Volunteer";
 
 
 function App() {
@@ -57,7 +58,7 @@ function App() {
           <Route path="/becomevolunteer"  element={<Becomevolunteer/>}/>
           <Route path="/donation"  element={<Donation/>}/>
           <Route path="implementationProcess" element= {<ImplementationProcess/>}/>
-          
+          <Route path="/volunteer" element={<Volunteer/>}/>
           
 
 

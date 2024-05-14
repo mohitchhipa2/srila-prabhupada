@@ -1,6 +1,14 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import f1 from '../assets/imgs/f1.jpg'
+import f2 from '../assets/imgs/f2.jpg'
+import f3 from '../assets/imgs/f3.jpg'
+import f4 from '../assets/imgs/f4.jpg'
+import f5 from '../assets/imgs/f5.jpg'
+import f6 from '../assets/imgs/f6.jpg'
 
 const Footer = () => {
+  const navigate = useNavigate()
   return (
     <div>
       
@@ -34,41 +42,39 @@ const Footer = () => {
           <h3>Useful Links</h3>
           <ul className="link">
             <li>
-              <a href="#">About Us</a>
+              <a onClick={() => navigate("/aboutus")} href="#">About Us</a>
             </li>
             <li>
-              <a href="#">Services</a>
+              <a onClick={() => navigate("/services")} href="#">Key Feature</a>
             </li>
             <li>
-              <a href="#">Projects</a>
+              <a onClick={() => navigate("/causes")} href="#">Donor</a>
             </li>
             <li>
-              <a href="#">FAQ</a>
+              <a onClick={() => navigate("/contactus")} href="#">Contact Us</a>
             </li>
-            <li>
-              <a href="#">Blog</a>
-            </li>
+           
           </ul>
         </div>
       </div>
       <div className="col-lg-3 col-sm-6">
         <div className="footer-widget">
-          <h3>About Us</h3>
+          <h3>Pages</h3>
           <ul className="link">
             <li>
-              <a href="#">Who We Are</a>
+              <a onClick={() => navigate("/team")} href="#">Team</a>
             </li>
             <li>
-              <a href="#">Volunteers</a>
+              <a onClick={() => navigate("/volunteer")} href="#">Volunteers</a>
             </li>
             <li>
-              <a href="#">Upcoming Events</a>
+              <a onClick={() => navigate("/events")} href="#">Success Stories</a>
             </li>
             <li>
-              <a href="#">Trending News</a>
+              <a onClick={() => navigate("/becomevolunteer")} href="#">Become a Volunteers</a>
             </li>
             <li>
-              <a href="#">Forum Support</a>
+              <a onClick={() => navigate("/implementationProcess")} href="#">Implementation Process</a>
             </li>
           </ul>
         </div>
@@ -79,32 +85,32 @@ const Footer = () => {
           <ul className="photo-galler">
             <li>
               <a href="#">
-                <img src="assets/img/gallery/gallery-1.jpg" alt="image" />
+                <img src={f1} alt="image" style={{height:'40px', width:'80px'}} />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="assets/img/gallery/gallery-2.jpg" alt="image" />
+                <img src={f2}alt="image" style={{height:'40px', width:'80px'}}/>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="assets/img/gallery/gallery-3.jpg" alt="image" />
+                <img src={f4} alt="image" style={{height:'40px',width:'80px'}}/>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="assets/img/gallery/gallery-4.jpg" alt="image" />
+                <img src={f5} alt="image" style={{height:'40px',width:'80px'}}/>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="assets/img/gallery/gallery-5.jpg" alt="image" />
+                <img src={f6} alt="image" style={{height:'40px',width:'80px'}}/>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="assets/img/gallery/gallery-6.jpg" alt="image" />
+                <img src={f1} alt="image" style={{height:'40px',width:'80px'}} />
               </a>
             </li>
           </ul>

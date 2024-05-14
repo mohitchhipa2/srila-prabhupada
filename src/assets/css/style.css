@@ -384,8 +384,8 @@ textarea.form-control {
     padding-bottom: 15px
 }
 
-@media (max-width:768px){
-    .top-header{
+@media (max-width:768px) {
+    .top-header {
         display: none;
     }
 }
@@ -1214,38 +1214,41 @@ textarea.form-control {
     display: none;
 }
 
-.mobile-menu{
+.mobile-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-@media (max-width:768px){
-    .desktop-nav{
+@media (max-width:768px) {
+    .desktop-nav {
         display: block;
     }
-    .mean-menu{
+
+    .mean-menu {
         display: flex;
         flex-direction: column;
         z-index: 100;
     }
-    .mobile-menu{
+
+    .mobile-menu {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+
     .mobile-nav {
-     display: block;
+        display: block;
     }
 
-    .navbar-brand{
+    .navbar-brand {
         display: none;
     }
-    
-    .navbar-area{
+
+    .navbar-area {
         height: 15vh;
     }
- 
+
 }
 
 .others-option-for-responsive {
@@ -2140,8 +2143,8 @@ textarea.form-control {
 
 .causes-area-two .single-causes-content {
     background-color: #fff;
-    
-    
+
+
 }
 
 .causes-area-two .owl-nav {
@@ -2786,14 +2789,14 @@ textarea.form-control {
 }
 
 .people-img-one {
-    
+
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+
     height: 100%;
-    
-    
+
+
 }
 
 .all-help-content {
@@ -5694,32 +5697,78 @@ label {
 
 /* ****************************************** */
 
-.radio{
+.radio {
     display: flex;
 }
 
-.from-radio{
+.from-radio {
     display: flex;
     padding: 1rem;
 }
-.from-g{
+
+.from-g {
     display: flex;
     align-items: center;
 }
-.from-g p{
+
+.from-g p {
     margin-right: .5rem;
     font-size: 1.5rem;
 }
-.from-g input{
+
+.from-g input {
     height: 2rem;
     width: 7rem;
 }
-.from-radio p{
-     margin-left: .5rem;
+
+.from-radio p {
+    margin-left: .5rem;
 }
 
-.radio-box{
+.radio-box {
     align-items: center;
     gap: 5px;
     display: flex;
 }
+
+.line {
+    height: 15vh;
+    background-color: #ec9935;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+}
+
+.line p {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.pages-list{
+    border-bottom: 2px solid #F1F1F1;
+}
+
+
+@media (max-width:600px){
+    .single-we-box p{
+        font-size: 25px;
+    }
+
+    .single-we-box h3{
+        font-size: 28px;
+    }
+}
+
+ @media (min-width:768px){
+    .help-form{
+        width: 800px;
+    }
+ }
+
+ @media (max-width:480px){
+    .all-help-content{
+        padding: 15px;
+    }
+ }

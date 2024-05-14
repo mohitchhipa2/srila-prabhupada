@@ -4,20 +4,67 @@ import donner2 from '../assets/imgs/donner2.webp'
 import donner3 from '../assets/imgs/donner3.jpg'
 
 const Causes = () => {
+  const teamMembers = [
+    {
+      name: 'Glims Bond',
+      image: donner1,
+      donation: '$256'
+    },
+    {
+      name: 'Sharlok Bin',
+      image: donner2,
+      donation: '$256'
+    },
+    {
+      name: 'Pristly Hearbart',
+      image: donner3,
+      donation: '$420'
+    },
+    {
+      name: 'Glims Bond',
+      image: donner1,
+      donation: '$256'
+    },
+    {
+      name: 'Sharlok Bin',
+      image: donner2,
+      donation: '$256'
+    },
+    {
+      name: 'Pristly Hearbart',
+      image: donner3,
+      donation: '$420'
+    },    {
+      name: 'Glims Bond',
+      image: donner1,
+      donation: '$256'
+    },
+    {
+      name: 'Sharlok Bin',
+      image: donner2,
+      donation: '$256'
+    },
+    {
+      name: 'Pristly Hearbart',
+      image: donner3,
+      donation: '$420'
+    },
+  ];
+  
   return (
     <div>
 
   <div className="page-title-area bg-13">
     <div className="container">
       <div className="page-title-content">
-        <h2>Doner</h2>
+        <h2>Donor</h2>
         <ul>
           <li>
             <a href="index.html">
               Home
             </a>
           </li>
-          <li className="active">Doner</li>
+          <li className="active">Donor</li>
         </ul>
       </div>
     </div>
@@ -30,106 +77,42 @@ const Causes = () => {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, perferendis facilis! Magni explicabo nam velit nulla officiis dolorum? Ducimus illum</p>
           </div>
           <div className="row">
-            <div className="col-lg-4 col-sm-6">
-              <div className="single-team">
-                <div className="team-img">
-                  <img src={donner1} alt="Image" />
-                  <ul className="team-link">
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-facebook" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-twitter" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-pinterest-alt" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-instagram" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="team-content">
-                  <h3>Glims Bond</h3>
-                  <span>Donate $256</span>
-                </div>
-              </div>
+      {teamMembers.map((member, index) => (
+        <div className="col-lg-4 col-sm-6" key={index}>
+          <div className="single-team">
+            <div className="team-img">
+              <img src={member.image} alt="Image" />
+              <ul className="team-link">
+                <li>
+                  <a href="#">
+                    <i className="bx bxl-facebook" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i className="bx bxl-twitter" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i className="bx bxl-pinterest-alt" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i className="bx bxl-instagram" />
+                  </a>
+                </li>
+              </ul>
             </div>
-            <div className="col-lg-4 col-sm-6">
-              <div className="single-team">
-                <div className="team-img">
-                  <img src={donner2} alt="Image" />
-                  <ul className="team-link">
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-facebook" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-twitter" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-pinterest-alt" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-instagram" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="team-content">
-                  <h3>Sharlok Bin</h3>
-                  <span>Donate $256</span>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-sm-6 offset-sm-3 offset-lg-0">
-              <div className="single-team">
-                <div className="team-img">
-                  <img src={donner3} alt="Image" />
-                  <ul className="team-link">
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-facebook" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-twitter" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-pinterest-alt" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-instagram" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="team-content">
-                  <h3>Pristly Hearbart</h3>
-                  <span>Donate $420</span>
-                </div>
-              </div>
+            <div className="team-content">
+              <h3>{member.name}</h3>
+              <span>Donate {member.donation}</span>
             </div>
           </div>
+        </div>
+      ))}
+    </div>
         </div>
       </section>
 </div>

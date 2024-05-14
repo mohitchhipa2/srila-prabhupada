@@ -1,8 +1,8 @@
 import React from 'react'
-import haridas from '../assets/imgs/Hg bhaj hari das.jpg'
-import mahavarahdas from '../assets/imgs/mahavara das.jpg'
-import vaikunthpatidas from '../assets/imgs/vekuinpath das.jpg'
-import srivarajbhumidas from '../assets/imgs/shrivarajbhumi das.jpg'
+import haridas from '../assets/imgs/Mens-Executive-Health-Check-up-over-40-scaled.webp'
+import mahavarahdas from '../assets/imgs/Dollarphotoclub_64980674.jpg'
+import vaikunthpatidas from '../assets/imgs/0c0331d5-3931-4f33-9.jpg'
+import srivarajbhumidas from '../assets/imgs/bd10d13320d7d7f49afcf5371c54e917.jpg'
 
 const Team = () => {
   return (
@@ -32,7 +32,7 @@ const Team = () => {
           <div className="row">
             <div className="col-lg-6 col-md-6">
               <div className="single-causes-box">
-                <img src={haridas} alt="Image" />
+                <img src={haridas} alt="Image" style={{height:'20rem'}}/>
                 <div className="single-causes-content">
                   <h3>
                     <a href="">HG Braj Hari Das
@@ -45,7 +45,7 @@ const Team = () => {
             </div>
             <div className="col-lg-6 col-md-6">
               <div className="single-causes-box">
-                <img src={mahavarahdas} alt="Image" style={{ height: "52vh" }} />
+                <img src={mahavarahdas} alt="Image" style={{height:'20rem'}} />
                 <div className="single-causes-content">
                   <h3>
                     <a href="causes-details-2.html">HG Mahavaraha Das
@@ -59,7 +59,7 @@ const Team = () => {
             </div>
             <div className="col-lg-6 col-md-6 offset-md-3 offset-lg-0">
               <div className="single-causes-box">
-                <img src={vaikunthpatidas} alt="Image" />
+                <img src={vaikunthpatidas} alt="Image" style={{height:'20rem'}} />
                 <div className="single-causes-content">
                   <h3>
                     <a href="causes-details-2.html">HG Vaikunthapati Das
@@ -73,7 +73,7 @@ const Team = () => {
             </div>
             <div className="col-lg-6 col-md-6 offset-md-3 offset-lg-0">
               <div className="single-causes-box">
-                <img src={srivarajbhumidas} alt="Image" style={{ height: "51vh" }} />
+                <img src={srivarajbhumidas} alt="Image" style={{height:'20rem'}} />
                 <div className="single-causes-content">
                   <h3>
                     <a href="causes-details-2.html">HG Vaikunthapati Das

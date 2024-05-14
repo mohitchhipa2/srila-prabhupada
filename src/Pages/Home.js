@@ -9,10 +9,11 @@ import homemain from "../assets/img/banner/banner-bg-shape-1.png"
 import prabhupada1 from '../assets/imgs/prabhupada.jpg'
 import prabhupadacare from '../assets/imgs/srila prabhupada care img.jpg'
 import prabhupadamission from '../assets/imgs/bhagavad-gita-16-05-by-srila-pra.jpg'
-import haridas from '../assets/imgs/Hg bhaj hari das.jpg'
-import mahavarahdas from '../assets/imgs/mahavara das.jpg'
-import vaikunthpatidas from '../assets/imgs/vekuinpath das.jpg'
-import srivarajbhumidas from '../assets/imgs/shrivarajbhumi das.jpg'
+import prabhupadavision from '../assets/imgs/need assistent.jpg'
+import haridas from '../assets/imgs/Mens-Executive-Health-Check-up-over-40-scaled.webp'
+import mahavarahdas from '../assets/imgs/Dollarphotoclub_64980674.jpg'
+import vaikunthpatidas from '../assets/imgs/0c0331d5-3931-4f33-9.jpg'
+import srivarajbhumidas from '../assets/imgs/bd10d13320d7d7f49afcf5371c54e917.jpg'
 import prabhupadaneed from '../assets/imgs/need assistent.jpg'
 import pabhupadaestablish from '../assets/imgs/establish program.webp'
 import prabhupadadatabase from '../assets/imgs/prabhupada database.avif'
@@ -235,14 +236,7 @@ const Home = () => {
             <div className="col-lg-6">
               <div className="about-img">
                 <img src={prabhupadacare} alt="Image" style={{ borderRadius: '15px' }} />
-                <div className="date-of-years">
-                  <div className="date-years">
-                    <div className>
-                      <span>26</span>
-                      <span>Years</span>
-                    </div>
-                  </div>
-                </div>
+              
               </div>
             </div>
             <div className="col-lg-6">
@@ -293,7 +287,7 @@ const Home = () => {
             <div className="col-lg-6">
               <div className="about-content">
                 {/* <span className="top-title">About</span> */}
-                <h2>Mission and Vision of Srila Prabhupada Disciples Care Program</h2>
+                <h2>Mission  of Srila Prabhupada Disciples Care Program</h2>
                 <p>To honor the lifelong dedication and service of Srila Prabhupada's disciples by providing compassionate care and support as they age to lead a life with dignity and purpose in their later years.
 
                 </p>
@@ -304,437 +298,30 @@ const Home = () => {
               <div className="about-img">
                 <img src={prabhupadamission} alt="Image" style={{ borderRadius: '2rem' }} />
 
-                <div className="date-of-years">
-                  <div className="date-years">
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="what-we-do-area pt-100 pb-70">
-        <div className="container">
-          <div className="section-title">
-            <h2>Key Features of Srila Prabhupada Disciples Care Program</h2>
-          </div>
-          <div className="row">
-            {featuresData.map((feature, index) => (
-              <div key={index} className="col-lg-3 col-sm-6">
-                <div className="single-we-box overly-outside">
-                  <div style={{ height: '65vh' }} className="overly-inside">
-                    <i>{feature.icon}</i>
-                    <h3>{feature.title}</h3>
-                    <p>{feature.description}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      {/* <section className="counter-area ptb-100">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-3 col-md-6 col-sm-6">
-              <div className="single-counter">
-                <i className="flaticon-project-management" />
-                <h2>
-                  <span className="odometer" data-count={950}>00</span>
-                  <span className="target">+</span>
-                </h2>
-                <p>Projects</p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-6">
-              <div className="single-counter">
-                <i className="flaticon-like" />
-                <h2>
-                  <span className="odometer" data-count={850}>00</span>
-                  <span className="target">+</span>
-                </h2>
-                <p>Fund Raised</p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-6">
-              <div className="single-counter">
-                <i className="flaticon-trophy" />
-                <h2>
-                  <span className="odometer" data-count={550}>00</span>
-                  <span className="traget">+</span>
-                </h2>
-                <p>Donations</p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-6">
-              <div className="single-counter">
-                <i className="flaticon-team" />
-                <h2>
-                  <span className="odometer" data-count={440}>00</span>
-                  <span className="target">+</span>
-                </h2>
-                <p>Volunteers</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-      <section className="causes-area pb-70">
-        <div className="container">
-          <div className="section-title">
-            {/* <span>What The Causes</span> */}
-            <h2>Implementation Process of Srila Prabhupada Disciples Care Program</h2>
-          </div>
-          <div className="row">
-            <div className="col-lg-4 col-md-6"  >
-              <div className="single-causes-box">
-                <img src={prabhupadaneed} alt="Image" />
-                <div style={{ height: "auto " }} className="single-causes-content">
-                  <h3>
-                    <a href="">Needs Assessment
-                    </a>
-                  </h3>
-                  <p>Conduct a comprehensive needs assessment to understand the healthcare, financial and emotional needs of Srila Prabhupada disciples through
-                  </p>
-                  <div>
-                    <button onClick={handleClick} style={{ display: more ? 'none' : 'block', backgroundColor: '#f99115', padding: '.5rem', color: '#fff', borderRadius: '.5rem' }} >
-                      Read More...
-                    </button>
-                    {more && (
-                      <div>
-                        <ul style={{ textAlign: 'left' }}>
-                          <li>Gather data through surveys;</li>
-                          <li>Interviews;</li>
-                          <li>focus groups;</li>
-                          <li>consultations with Srila Prabhupada disciples;</li>
-                          <li>caregivers; and</li>
-                          <li>community members.</li>
-                        </ul>
-                        <button onClick={handleClick} style={{ backgroundColor: '#f99115', padding: '.5rem', color: '#fff', borderRadius: '.5rem' }} >Read Less..</button>
-                      </div>
-                    )}
-                  </div>
-             
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="single-causes-box">
-                <img src={pabhupadaestablish} alt="Image" />
-                <div className="single-causes-content">
-                  <h3>
-                    <a href="causes-details-2.html">Establish Program Infrastructure
-                    </a>
-                  </h3>
-                  <p> Initially, we can develop infrastructure for the program based on need assessment</p>
-                  <button onClick={handleClick2} style={{ display: more2 ? 'none' : 'block', backgroundColor: '#f99115', 
-                  padding: '.5rem', color: '#fff', borderRadius: '.5rem', marginTop:'3.4rem' }} >
-                    Read More...
-                  </button>
-                  {more2 && (
-                    <div>
-                      <ul style={{ textAlign: 'left' }}>
-                        <li>Designate roles and responsibilities for team members, including program coordinators, volunteers, and support staff. </li>
-                        <li>Establish healthcare coordination services to assist disciples in accessing medical care, treatments, and support services.</li>
-                        <li>Identify fund raising avenues such as patrons retreat, crowd funding platforms.</li>
-                        <li>consultations with Srila Prabhupada disciples;</li>
-                        <li>Create housing assistance programs to help disciples find suitable living arrangements, including options for relocating to sacred pilgrimage sites.</li>
-                      </ul>
-                      <button onClick={handleClick2} style={{ backgroundColor: '#f99115', padding: '.5rem', color: '#fff', borderRadius: '.5rem' }} >Read Less..
-                      </button>
-                    </div>
-
-                  )}
-
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
-              <div className="single-causes-box">
-                <img src={prabhupadadatabase} alt="Image" />
-                <div style={{ height: "auto" }} className="single-causes-content">
-                  <h3>
-                    <a href="">Database
-                    </a>
-                  </h3>
-                  <p>Create database of key stakeholders in the program:
-                  </p>
-                  <button onClick={handleClick3} style={{ display: more3 ? 'none' : 'block', backgroundColor: '#f99115', padding: '.5rem',
-                   color: '#fff', borderRadius: '.5rem',marginTop:'6.5rem' }} >
-                    Read More...
-                  </button>
-                  {more3 && (
-                  <div>
-                    <ul style={{ textAlign: 'left' }}>
-                      <li>Designate roles and responsibilities for team members, including program coordinators, volunteers, and support staff. </li>
-                      <li>Establish healthcare coordination services to assist disciples in accessing medical care, treatments, and support services.</li>
-                      <li>Identify fund raising avenues such as patrons retreat, crowd funding platforms.</li>
-                      <li>consultations with Srila Prabhupada disciples;</li>
-                      <li>Create housing assistance programs to help disciples find suitable living arrangements, including options for relocating to sacred pilgrimage sites.</li>
-                    </ul>
-                    <button onClick={handleClick3} style={{ backgroundColor: '#f99115', padding: '.5rem', color: '#fff', borderRadius: '.5rem' }} >Read Less..
-                    </button>
-                  </div>
-                )}
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
-              <div className="single-causes-box">
-                <img src={prabhupadacollaboration} alt="Image" />
-                <div style={{ height: "auto" }} className="single-causes-content">
-                  <h3>
-                    <a href="">Build Partnerships and Collaborations
-                    </a>
-                  </h3>
-                  <p>"Create synergies with devotee care departments, healthcare facilities like Bahktivedanta Hospital, and the Bhakti Vedanta Medical Association network for collaboration."
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
-              <div className="single-causes-box">
-                <img src={prabhupadapromation} alt="Image" />
-                <div style={{height:'auto'}} className="single-causes-content">
-                  <h3>
-                    <a href="">Launch and Promotion
-                    </a>
-                  </h3>
-                  <p>"Launch Srila Prabhupada Disciple Care Program with coordinated outreach via websites, social media, temple announcements, and community events."
-                  </p>
             
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
-              <div className="single-causes-box">
-                <img src={prabhupadaevaluate} alt="Image" />
-                <div style={{ height: "auto" }} className="single-causes-content">
-                  <h3>
-                    <a href="">Monitor and Evaluate
-                    </a>
-                  </h3>
-                  <p>Establish monitoring and evaluation mechanisms to track program progress, outputs, and outcomes. Annually present the achievements to GBC members.
-                  </p>
-                  {/* <div className="all-skill-bar">
-                    <div className="skill-bar" data-percentage="95%">
-                      <h4 className="progress-title-holder">
-                        <span className="progress-title">$1900000 Raised Of $160000</span>
-                        <span className="progress-number-mark">
-                          <span className="percent" />
-                          <span className="down-arrow" />
-                        </span>
-                      </h4>
-                      <div className="progress-content-outter">
-                        <div className="progress-content" />
-                      </div>
-                    </div>
-                  </div>
-                  <a href="#" className="default-btn">
-                    <span>Donate Now</span>
-                  </a> */}
-                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/* <section className="testimonials-area ptb-100">
+      <section className="about-area pt-100 pb-70">
         <div className="container">
-          <div className="section-title">
-            <span>Testimonials</span>
-            <h2>What Are Our Clients Says</h2>
-          </div>
-          <div className="testimonials-slider owl-theme owl-carousel">
-            <div className="row align-items-center">
-              <div className="col-lg-4">
-                <img src="assets/img/testimonials/testimonials-1.jpg" alt="Image" />
-              </div>
-              <div className="col-lg-8">
-                <div className="testimonials-content">
-                  <p>“Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. ipsum dolor sit amet, consetetur sadipscing elitr”</p>
-                  <div className="testimonials-name">
-                    <h3>Jiniya Lisa</h3>
-                    <span>Charity CEO</span>
-                  </div>
-                </div>
+          <div className="row align-items-center">
+            <div className="col-lg-6">
+              <div className="about-img">
+                <img src={prabhupadavision} alt="Image" style={{ borderRadius: '2rem' }} />
+
+                
               </div>
             </div>
-            <div className="row align-items-center">
-              <div className="col-lg-4">
-                <img src="assets/img/testimonials/testimonials-2.jpg" alt="Image" />
-              </div>
-              <div className="col-lg-8">
-                <div className="testimonials-content">
-                  <p>“Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. ipsum dolor sit amet, consetetur sadipscing elitr”</p>
-                  <div className="testimonials-name">
-                    <h3>Juhon Sheetz</h3>
-                    <span>Charity Volunteer</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-      <section className="help-people-area">
-        <div className="container-fluid">
-          <div className="section-title">
-            {/* <span>What The Causes</span> */}
-            <h2 style={{ paddingBlock: '2rem' }}>Success Stories of Srila Prabhupada Disciples Care Program</h2>
-          </div>
-          <div className="row" >
-            <div className="col-lg-6 col-md-6 " style={{ padding: '5rem' }} >
-              {/* <div className="people-img-one jarallax" data-jarallax="{&quot;speed&quot;: 0.3}"  /> */}
-              <div className="people-img-one jarallax">
-                <img src={prabhupadastory1} />
-              </div>
-            </div>
-            <div className="col-lg-6 col-md-6 p-0">
-              <div className="all-help-content">
-                <div className="people-content">
-                  <h2>Establishment of ISKCON:</h2>
-                  <p> Perhaps the most remarkable success story of Srila Prabhupada is the establishment of ISKCON itself. In 1966, at the age of 70, he arrived in New York City with just a few dollars and a trunk of books. Despite facing numerous challenges and setbacks, he tirelessly spread the teachings of Bhagavad Gita and the practice of Krishna consciousness. His dedication and perseverance led to the rapid growth of ISKCON, which has now become a global spiritual movement with millions of followers worldwide.</p>
-                </div>
+            <div className="col-lg-6">
+              <div className="about-content">
+                {/* <span className="top-title">About</span> */}
+                <h2>Vision of Srila Prabhupada Disciples Care Program</h2>
+                <p>To honor the lifelong dedication and service of Srila Prabhupada's disciples by providing compassionate care and support as they age to lead a life with dignity and purpose in their later years.
 
-              </div>
-            </div>
-            <div className="col-lg-6 col-md-6 p-0">
-              <div className="all-help-content">
-                <div className="people-content">
-                  <h2>Writing and Publishing:</h2>
-                  <p> Srila Prabhupada translated and wrote commentaries on numerous Vedic scriptures, including the Bhagavad Gita, Srimad Bhagavatam, and Caitanya Caritamrita. His translations and commentaries are widely regarded for their clarity and depth, and they continue to inspire millions of people around the world. He also established the Bhaktivedanta Book Trust (BBT) to publish and distribute his books, which have been translated into dozens of languages and distributed in millions of copies.</p>
+                </p>
 
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6 col-md-6 " style={{ padding: '5rem' }}>
-              {/* <div className="people-img-two jarallax" data-jarallax="{&quot;speed&quot;: 0.3}" /> */}
-              <div className="people-img-one jarallax">
-                <img src={prabhupadastory2} />
-              </div>
-            </div>
-
-          </div>
-
-
-          <div className="row">
-            <div className="col-lg-6 col-md-6 " style={{ padding: '5rem' }}>
-              {/* <div className="people-img-one jarallax" data-jarallax="{&quot;speed&quot;: 0.3}" /> */}
-              <div className="people-img-one jarallax">
-                <img src={prabhupadastory3} />
-              </div>
-            </div>
-            <div className="col-lg-6 col-md-6 p-0">
-              <div className="all-help-content">
-                <div className="people-content">
-                  <h2>Temple Establishments:</h2>
-                  <p>Srila Prabhupada oversaw the establishment of numerous temples and ashrams around the world, where devotees could practice Krishna consciousness and engage in devotional activities. The most famous of these is the Krishna Balaram Mandir in Vrindavan, India, and the ISKCON temple in Mayapur, West Bengal, which is the headquarters of ISKCON</p>
-                </div>
-
-              </div>
-            </div>
-            <div className="col-lg-6 col-md-6 p-0">
-              <div className="all-help-content">
-                <div className="people-content">
-                  <h2>Food Distribution:</h2>
-                  <p>  Srila Prabhupada initiated the distribution of prasadam (sanctified food offered to Krishna) as a means of alleviating hunger and poverty. ISKCON's food distribution programs, such as the Hare Krishna Food for Life, have served millions of free meals to the needy around the world, regardless of race, religion, or nationality.</p>
-
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6 col-md-6 " style={{ padding: '5rem' }}>
-              {/* <div className="people-img-two jarallax" data-jarallax="{&quot;speed&quot;: 0.3}" /> */}
-              <div className="people-img-one jarallax">
-                <img src={prabhupadastory4} />
-              </div>
-            </div>
-
-          </div>
-
-          <div className="row">
-            <div className="col-lg-6 col-md-6 " style={{ padding: '5rem' }}>
-              {/* <div className="people-img-one jarallax" data-jarallax="{&quot;speed&quot;: 0.3}" /> */}
-              <div className="people-img-one jarallax">
-                <img src={prabhupadastory5} />
-              </div>
-            </div>
-            <div className="col-lg-6 col-md-6 p-0">
-              <div className="all-help-content">
-                <div className="people-content">
-                  <h2>Cultural Influence: </h2>
-                  <p> Srila Prabhupada's teachings and the Hare Krishna movement have had a significant cultural influence, especially in the West. The chanting of the Hare Krishna mantra, popularized by ISKCON, became a prominent feature of the counterculture movement of the 1960s and 1970s. Today, the Hare Krishna mantra continues to be sung and practiced by people of various backgrounds as a means of spiritual upliftment.</p>
-                </div>
-
-              </div>
-            </div>
-
-
-          </div>
-
-        </div>
-      </section>
-      <section className="causes-area pb-70">
-        <div className="container">
-          <div className="section-title">
-            {/* <span>What The Causes</span> */}
-            <h2>Meet the Sevakas</h2>
-          </div>
-          <div className="row">
-            <div className="col-lg-6 col-md-6">
-              <div className="single-causes-box">
-                <img src={haridas} alt="Image" />
-                <div className="single-causes-content">
-                  <h3>
-                    <a href="">HG Braj Hari Das
-                    </a>
-                  </h3>
-                  <p>Brajhari Das joined in ISKCON at BHUBANESHWAR in June 1984. He met HH Jayapataka Swami who sent him to Hyderabad . Latter on he took Intiation from HH Jayapataka Swami in 1985. He came to Juhu temple for training and since then he has been rendering service in the temple.. He was leading the book distribution of ISKCON Juhu, then General manager, Vice President and President of the temple for last 20 years</p>
-
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6 col-md-6">
-              <div className="single-causes-box">
-                <img src={mahavarahdas} alt="Image" style={{ height: "52vh" }} />
-                <div className="single-causes-content">
-                  <h3>
-                    <a href="causes-details-2.html">HG Mahavaraha Das
-                    </a>
-                  </h3>
-                  <p>Mahavaraha prabhu joined ISKCON 26 years ago in Malaysia. He is disciple of HH Jayapataka Swami. Immediately after he had become a devotee, he immediately got the chance to do personal service to his guru maharaj. Since guru maharaj had the stroke, for every single moment, every single day, for the past so many years, he has been with his guru maharaj.
-                  </p>
-
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6 col-md-6 offset-md-3 offset-lg-0">
-              <div className="single-causes-box">
-                <img src={vaikunthpatidas} alt="Image" />
-                <div className="single-causes-content">
-                  <h3>
-                    <a href="causes-details-2.html">HG Vaikunthapati Das
-                    </a>
-                  </h3>
-                  <p>Chartered Accountant by qualification and has held very senior positions in Mumbai & Middle East. Disciple of HH Jaypataka Swami Maharaja initiated in 1993 and founder of Krishna Katha Desh Yatra in Middle East and currently developing a community in Wadala, Mumbai. He has developed a strong community of devotees who closely knitted and are engaged in reading Srila Prabhupa’s books and spreading the movement.
-                  </p>
-
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6 col-md-6 offset-md-3 offset-lg-0">
-              <div className="single-causes-box">
-                <img src={srivarajbhumidas} alt="Image" style={{ height: "51vh" }} />
-                <div className="single-causes-content">
-                  <h3>
-                    <a href="causes-details-2.html">HG Vaikunthapati Das
-                    </a>
-                  </h3>
-                  <p>Chartered Accountant by qualification and has held very senior positions in Mumbai & Middle East. Disciple of HH Jaypataka Swami Maharaja initiated in 1993 and founder of Krishna Katha Desh Yatra in Middle East and currently developing a community in Wadala, Mumbai. He has developed a strong community of devotees who closely knitted and are engaged in reading Srila Prabhupa’s books and spreading the movement.
-                  </p>
-
-                </div>
               </div>
             </div>
           </div>
@@ -850,105 +437,500 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/* <section className="blog-area pt-100 pb-70">
+      <section className="what-we-do-area pt-100 pb-70">
         <div className="container">
           <div className="section-title">
-            <span>Latest News</span>
-            <h2>Read The Latest Articles From Us</h2>
+            <h2>Key Features of Srila Prabhupada Disciples Care Program</h2>
           </div>
           <div className="row">
-            <div className="col-lg-6 col-md-6">
-              <div className="single-blog-post">
-                <div className="blog-img">
-                  <a href="blog-details.html">
-                    <img src="assets/img/blog/blog-1.jpg" alt="Image" />
-                  </a>
+            {featuresData.map((feature, index) => (
+              <div key={index} className="col-lg-3 col-sm-6">
+                <div className="single-we-box overly-outside">
+                  <div style={{ height: '65vh' }} className="overly-inside">
+                    <i>{feature.icon}</i>
+                    <h3>{feature.title}</h3>
+                    <p>{feature.description}</p>
+                  </div>
                 </div>
-                <div className="blog-content">
-                  <ul>
-                    <li>
-                      <i className="flaticon-user" />
-                      <a href="#">By Admin</a>
-                    </li>
-                    <li>
-                      <i className="flaticon-class" />
-                      <span>Education</span>
-                    </li>
-                  </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="causes-area pb-70">
+        <div className="container">
+          <div className="section-title">
+            {/* <span>What The Causes</span> */}
+            <h2>Implementation Process of Srila Prabhupada Disciples Care Program</h2>
+          </div>
+          <div className="row">
+            <div className="col-lg-4 col-md-6"  >
+              <div className="single-causes-box">
+                <img src={prabhupadaneed} alt="Image" />
+                <div style={{ height: "auto " }} className="single-causes-content">
                   <h3>
-                    <a href="blog-details.html">Charity Can Help Make Smile
-                      Of Poor People</a>
+                    <a href="">Needs Assessment
+                    </a>
                   </h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <a href="blog-details.html" className="read-more">
-                    Read More
-                  </a>
+                  <p>Conduct a comprehensive needs assessment to understand the healthcare, financial and emotional needs of Srila Prabhupada disciples through
+                  </p>
+                  <div>
+                    <button onClick={handleClick} style={{ display: more ? 'none' : 'block', backgroundColor: '#f99115', padding: '.5rem', color: '#fff', borderRadius: '.5rem' }} >
+                      Read More...
+                    </button>
+                    {more && (
+                      <div>
+                        <ul style={{ textAlign: 'left' }}>
+                          <li>Gather data through surveys;</li>
+                          <li>Interviews;</li>
+                          <li>focus groups;</li>
+                          <li>consultations with Srila Prabhupada disciples;</li>
+                          <li>caregivers; and</li>
+                          <li>community members.</li>
+                        </ul>
+                        <button onClick={handleClick} style={{ backgroundColor: '#f99115', padding: '.5rem', color: '#fff', borderRadius: '.5rem' }} >Read Less..</button>
+                      </div>
+                    )}
+                  </div>
+
                 </div>
-                <span className="date">
-                  17 <br /> Oct
-                </span>
               </div>
             </div>
-            <div className="col-lg-6 col-md-6">
-              <div className="single-blog-post">
-                <div className="blog-img">
-                  <a href="blog-details.html">
-                    <img src="assets/img/blog/blog-2.jpg" alt="Image" />
-                  </a>
-                </div>
-                <div className="blog-content">
-                  <ul>
-                    <li>
-                      <i className="flaticon-user" />
-                      <a href="#">By Admin</a>
-                    </li>
-                    <li>
-                      <i className="flaticon-class" />
-                      <span>Food</span>
-                    </li>
-                  </ul>
+            <div className="col-lg-4 col-md-6">
+              <div className="single-causes-box">
+                <img src={pabhupadaestablish} alt="Image" />
+                <div className="single-causes-content">
                   <h3>
-                    <a href="blog-details.html">Save The Children’s Role In Fight Against Malnutrition Hailed</a>
+                    <a href="causes-details-2.html">Establish Program Infrastructure
+                    </a>
                   </h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <a href="blog-details.html" className="read-more">
-                    Read More
-                  </a>
+                  <p> Initially, we can develop infrastructure for the program based on need assessment</p>
+                  <button onClick={handleClick2} style={{
+                    display: more2 ? 'none' : 'block', backgroundColor: '#f99115',
+                    padding: '.5rem', color: '#fff', borderRadius: '.5rem', marginTop: '3.4rem'
+                  }} >
+                    Read More...
+                  </button>
+                  {more2 && (
+                    <div>
+                      <ul style={{ textAlign: 'left' }}>
+                        <li>Designate roles and responsibilities for team members, including program coordinators, volunteers, and support staff. </li>
+                        <li>Establish healthcare coordination services to assist disciples in accessing medical care, treatments, and support services.</li>
+                        <li>Identify fund raising avenues such as patrons retreat, crowd funding platforms.</li>
+                        <li>consultations with Srila Prabhupada disciples;</li>
+                        <li>Create housing assistance programs to help disciples find suitable living arrangements, including options for relocating to sacred pilgrimage sites.</li>
+                      </ul>
+                      <button onClick={handleClick2} style={{ backgroundColor: '#f99115', padding: '.5rem', color: '#fff', borderRadius: '.5rem' }} >Read Less..
+                      </button>
+                    </div>
+
+                  )}
+
                 </div>
-                <span className="date">
-                  18 <br /> Oct
-                </span>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+              <div className="single-causes-box">
+                <img src={prabhupadadatabase} alt="Image" />
+                <div style={{ height: "auto" }} className="single-causes-content">
+                  <h3>
+                    <a href="">Database
+                    </a>
+                  </h3>
+                  <p>Create database of key stakeholders in the program:
+                  </p>
+                  <button onClick={handleClick3} style={{
+                    display: more3 ? 'none' : 'block', backgroundColor: '#f99115', padding: '.5rem',
+                    color: '#fff', borderRadius: '.5rem', marginTop: '6.5rem'
+                  }} >
+                    Read More...
+                  </button>
+                  {more3 && (
+                    <div>
+                      <ul style={{ textAlign: 'left' }}>
+                        <li>Designate roles and responsibilities for team members, including program coordinators, volunteers, and support staff. </li>
+                        <li>Establish healthcare coordination services to assist disciples in accessing medical care, treatments, and support services.</li>
+                        <li>Identify fund raising avenues such as patrons retreat, crowd funding platforms.</li>
+                        <li>consultations with Srila Prabhupada disciples;</li>
+                        <li>Create housing assistance programs to help disciples find suitable living arrangements, including options for relocating to sacred pilgrimage sites.</li>
+                      </ul>
+                      <button onClick={handleClick3} style={{ backgroundColor: '#f99115', padding: '.5rem', color: '#fff', borderRadius: '.5rem' }} >Read Less..
+                      </button>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+              <div className="single-causes-box">
+                <img src={prabhupadacollaboration} alt="Image" />
+                <div style={{ height: "auto" }} className="single-causes-content">
+                  <h3>
+                    <a href="">Build Partnerships and Collaborations
+                    </a>
+                  </h3>
+                  <p>"Create synergies with devotee care departments, healthcare facilities like Bahktivedanta Hospital, and the Bhakti Vedanta Medical Association network for collaboration."
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+              <div className="single-causes-box">
+                <img src={prabhupadapromation} alt="Image" />
+                <div style={{ height: 'auto' }} className="single-causes-content">
+                  <h3>
+                    <a href="">Launch and Promotion
+                    </a>
+                  </h3>
+                  <p>"Launch Srila Prabhupada Disciple Care Program with coordinated outreach via websites, social media, temple announcements, and community events."
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+              <div className="single-causes-box">
+                <img src={prabhupadaevaluate} alt="Image" />
+                <div style={{ height: "auto" }} className="single-causes-content">
+                  <h3>
+                    <a href="">Monitor and Evaluate
+                    </a>
+                  </h3>
+                  <p>Establish monitoring and evaluation mechanisms to track program progress, outputs, and outcomes. Annually present the achievements to GBC members.
+                  </p>
+                  {/* <div className="all-skill-bar">
+                    <div className="skill-bar" data-percentage="95%">
+                      <h4 className="progress-title-holder">
+                        <span className="progress-title">$1900000 Raised Of $160000</span>
+                        <span className="progress-number-mark">
+                          <span className="percent" />
+                          <span className="down-arrow" />
+                        </span>
+                      </h4>
+                      <div className="progress-content-outter">
+                        <div className="progress-content" />
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" className="default-btn">
+                    <span>Donate Now</span>
+                  </a> */}
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="subscribe-area">
-        <div className="container bg-color">
-          <div className="row align-items-center">
+
+      <section className="help-people-area">
+        <div className="container-fluid">
+          <div className="section-title">
+            {/* <span>What The Causes</span> */}
+            <h2 style={{ paddingBlock: '2rem' }}>Success Stories of Srila Prabhupada Disciples Care Program</h2>
+          </div>
+          <div className="row" >
+            <div className="col-lg-6 col-md-6 " style={{ padding: '5rem' }} >
+              {/* <div className="people-img-one jarallax" data-jarallax="{&quot;speed&quot;: 0.3}"  /> */}
+              <div className="people-img-one jarallax">
+                <img src={prabhupadastory1} />
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-6 p-0">
+              <div className="all-help-content">
+                <div className="people-content">
+                  <h2>Establishment of ISKCON:</h2>
+                  <p> Perhaps the most remarkable success story of Srila Prabhupada is the establishment of ISKCON itself. In 1966, at the age of 70, he arrived in New York City with just a few dollars and a trunk of books. Despite facing numerous challenges and setbacks, he tirelessly spread the teachings of Bhagavad Gita and the practice of Krishna consciousness. His dedication and perseverance led to the rapid growth of ISKCON, which has now become a global spiritual movement with millions of followers worldwide.</p>
+                </div>
+
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-6 p-0">
+              <div className="all-help-content">
+                <div className="people-content">
+                  <h2>Writing and Publishing:</h2>
+                  <p> Srila Prabhupada translated and wrote commentaries on numerous Vedic scriptures, including the Bhagavad Gita, Srimad Bhagavatam, and Caitanya Caritamrita. His translations and commentaries are widely regarded for their clarity and depth, and they continue to inspire millions of people around the world. He also established the Bhaktivedanta Book Trust (BBT) to publish and distribute his books, which have been translated into dozens of languages and distributed in millions of copies.</p>
+
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-6 " style={{ padding: '5rem' }}>
+              {/* <div className="people-img-two jarallax" data-jarallax="{&quot;speed&quot;: 0.3}" /> */}
+              <div className="people-img-one jarallax">
+                <img src={prabhupadastory2} />
+              </div>
+            </div>
+
+          </div>
+
+
+          <div className="row">
+            <div className="col-lg-6 col-md-6 " style={{ padding: '5rem' }}>
+              {/* <div className="people-img-one jarallax" data-jarallax="{&quot;speed&quot;: 0.3}" /> */}
+              <div className="people-img-one jarallax">
+                <img src={prabhupadastory3} />
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-6 p-0">
+              <div className="all-help-content">
+                <div className="people-content">
+                  <h2>Temple Establishments:</h2>
+                  <p>Srila Prabhupada oversaw the establishment of numerous temples and ashrams around the world, where devotees could practice Krishna consciousness and engage in devotional activities. The most famous of these is the Krishna Balaram Mandir in Vrindavan, India, and the ISKCON temple in Mayapur, West Bengal, which is the headquarters of ISKCON</p>
+                </div>
+
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-6 p-0">
+              <div className="all-help-content">
+                <div className="people-content">
+                  <h2>Food Distribution:</h2>
+                  <p>  Srila Prabhupada initiated the distribution of prasadam (sanctified food offered to Krishna) as a means of alleviating hunger and poverty. ISKCON's food distribution programs, such as the Hare Krishna Food for Life, have served millions of free meals to the needy around the world, regardless of race, religion, or nationality.</p>
+
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-6 " style={{ padding: '5rem' }}>
+              {/* <div className="people-img-two jarallax" data-jarallax="{&quot;speed&quot;: 0.3}" /> */}
+              <div className="people-img-one jarallax">
+                <img src={prabhupadastory4} />
+              </div>
+            </div>
+
+          </div>
+
+          <div className="row">
+            <div className="col-lg-6 col-md-6 " style={{ padding: '5rem' }}>
+              {/* <div className="people-img-one jarallax" data-jarallax="{&quot;speed&quot;: 0.3}" /> */}
+              <div className="people-img-one jarallax">
+                <img src={prabhupadastory5} />
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-6 p-0">
+              <div className="all-help-content">
+                <div className="people-content">
+                  <h2>Cultural Influence: </h2>
+                  <p> Srila Prabhupada's teachings and the Hare Krishna movement have had a significant cultural influence, especially in the West. The chanting of the Hare Krishna mantra, popularized by ISKCON, became a prominent feature of the counterculture movement of the 1960s and 1970s. Today, the Hare Krishna mantra continues to be sung and practiced by people of various backgrounds as a means of spiritual upliftment.</p>
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </section>
+      <section className="causes-area pb-70">
+        <div className="container">
+          <div className="section-title">
+            {/* <span>What The Causes</span> */}
+            <h2>Meet the Sevakas</h2>
+          </div>
+          <div className="row">
             <div className="col-lg-6 col-md-6">
-              <div className="subscribe-content">
-                <h2>Do You Want To Know to Get Update On What’s Upcoming</h2>
+              <div className="single-causes-box">
+                <img src={haridas} alt="Image" style={{height:'20rem'}} />
+                <div className="single-causes-content">
+                  <h3>
+                    <a href="">HG Braj Hari Das
+                    </a>
+                  </h3>
+                  <p>Brajhari Das joined in ISKCON at BHUBANESHWAR in June 1984. He met HH Jayapataka Swami who sent him to Hyderabad . Latter on he took Intiation from HH Jayapataka Swami in 1985. He came to Juhu temple for training and since then he has been rendering service in the temple.. He was leading the book distribution of ISKCON Juhu, then General manager, Vice President and President of the temple for last 20 years</p>
+
+                </div>
               </div>
             </div>
             <div className="col-lg-6 col-md-6">
-              <form className="newsletter-form" data-toggle="validator">
-                <input type="email" className="form-control" placeholder="Enter email address" name="EMAIL" required autoComplete="off" />
-                <button className="default-btn" type="submit">
-                  <span>Subscribe Now</span>
-                </button>
-                <div id="validator-newsletter" className="form-result" />
-              </form>
+              <div className="single-causes-box">
+                <img src={mahavarahdas} alt="Image" style={{height:'20rem'}} />
+                <div className="single-causes-content">
+                  <h3>
+                    <a href="causes-details-2.html">HG Mahavaraha Das
+                    </a>
+                  </h3>
+                  <p>Mahavaraha prabhu joined ISKCON 26 years ago in Malaysia. He is disciple of HH Jayapataka Swami. Immediately after he had become a devotee, he immediately got the chance to do personal service to his guru maharaj. Since guru maharaj had the stroke, for every single moment, every single day, for the past so many years, he has been with his guru maharaj.
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-6 offset-md-3 offset-lg-0">
+              <div className="single-causes-box">
+                <img src={vaikunthpatidas} alt="Image" style={{height:'20rem'}}/>
+                <div className="single-causes-content">
+                  <h3>
+                    <a href="causes-details-2.html">HG Vaikunthapati Das
+                    </a>
+                  </h3>
+                  <p>Chartered Accountant by qualification and has held very senior positions in Mumbai & Middle East. Disciple of HH Jaypataka Swami Maharaja initiated in 1993 and founder of Krishna Katha Desh Yatra in Middle East and currently developing a community in Wadala, Mumbai. He has developed a strong community of devotees who closely knitted and are engaged in reading Srila Prabhupa’s books and spreading the movement.
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-6 offset-md-3 offset-lg-0">
+              <div className="single-causes-box">
+                <img src={srivarajbhumidas} alt="Image" style={{height:'20rem'}} />
+                <div className="single-causes-content">
+                  <h3>
+                    <a href="causes-details-2.html">HG Vaikunthapati Das
+                    </a>
+                  </h3>
+                  <p>Chartered Accountant by qualification and has held very senior positions in Mumbai & Middle East. Disciple of HH Jaypataka Swami Maharaja initiated in 1993 and founder of Krishna Katha Desh Yatra in Middle East and currently developing a community in Wadala, Mumbai. He has developed a strong community of devotees who closely knitted and are engaged in reading Srila Prabhupa’s books and spreading the movement.
+                  </p>
+
+                </div>
+              </div>
             </div>
           </div>
-          <div className="subscribe-shape-1">
-            <img src="assets/img/subscribe-shape-1.png" alt="Image" />
-          </div>
-          <div className="subscribe-shape-2">
-            <img src="assets/img/subscribe-shape-2.png" alt="Image" />
+        </div>
+      </section>
+      <section className="team-area pt-100 pb-70">
+        <div className="container">
+          <div className="section-title">
+            {/* <span className="top-title">Team Member</span> */}
+            <h2>Our Volunteer</h2>
+            </div>
+          <div className="row">
+            <div className="col-lg-4 col-sm-6">
+              <div className="single-team">
+                <div className="team-img">
+                  <img src={donner1} alt="Image" />
+                  <ul className="team-link">
+                    <li>
+                      <a href="#">
+                        <i className="bx bxl-facebook" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="bx bxl-twitter" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="bx bxl-pinterest-alt" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="bx bxl-instagram" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="team-content">
+                  <h3>Glims Bond</h3>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-sm-6">
+              <div className="single-team">
+                <div className="team-img">
+                  <img src={donner2} alt="Image" />
+                  <ul className="team-link">
+                    <li>
+                      <a href="#">
+                        <i className="bx bxl-facebook" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="bx bxl-twitter" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="bx bxl-pinterest-alt" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="bx bxl-instagram" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="team-content">
+                  <h3>Sharlok Bin</h3> 
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-sm-6 offset-sm-3 offset-lg-0">
+              <div className="single-team">
+                <div className="team-img">
+                  <img src={donner3} alt="Image" />
+                  <ul className="team-link">
+                    <li>
+                      <a href="#">
+                        <i className="bx bxl-facebook" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="bx bxl-twitter" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="bx bxl-pinterest-alt" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="bx bxl-instagram" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="team-content">
+                  <h3>Pristly Hearbart</h3>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </section> */}
+      </section>
+      <section className="volunteer-join-area volunteer-join-area-page ptb-100">
+        <div className="container">
+          <form className="volunteer-join">
+            <div className="volunteer-title">
+              <h2>Join Our Volunteer Group For Serve Helpless</h2>
+            </div>
+            <div className="row">
+              <div className="col-12">
+                <div className="form-group">
+                  <input type="text" className="form-control" id="First-Name" placeholder="Name" />
+                </div>
+              </div>
+              <div className="col-12">
+                <div className="form-group">
+                  <input type="email" className="form-control" id="Email" placeholder="Email" />
+                </div>
+              </div>
+              <div className="col-12">
+                <div className="form-group">
+                  <input type="text" className="form-control" id="Number" placeholder="Phone" />
+                </div>
+              </div>
+              <div className="col-12">
+                <div className="form-group">
+                  <input type="text" className="form-control" id="Address" placeholder="Address" />
+                </div>
+              </div>
+              <div className="col-12">
+                <div className="form-group">
+                  <textarea name="message" className="form-control" id="Message" cols={30} rows={5} placeholder="Message" defaultValue={""} />
+                </div>
+              </div>
+            </div>
+            <button type="submit" className="default-btn">
+              <span>Submit</span>
+            </button>
+          </form>
+        </div>
+      </section>
+
       <div className="partner-area ptb-100">
         <div className="container">
           <div className="partner-slider owl-theme owl-carousel">
