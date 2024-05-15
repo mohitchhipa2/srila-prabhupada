@@ -28,11 +28,27 @@ import prabhupadastory5 from '../assets/imgs/prabhupada story5.jpg'
 import donner1 from '../assets/imgs/donner1.webp'
 import donner2 from '../assets/imgs/donner2.webp'
 import donner3 from '../assets/imgs/donner3.jpg'
+import { IoIosArrowRoundForward } from "react-icons/io";
+import Accordion, { AccordionSlots } from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Fade from '@mui/material/Fade';
+
+
+
 
 const Home = () => {
   const [more, setMore] = useState(false)
   const [more2, setMore2] = useState(false)
   const [more3, setMore3] = useState(false)
+
+  const [expanded, setExpanded] = React.useState(false);
+
+  const handleExpansion = () => {
+    setExpanded((prevExpanded) => !prevExpanded);
+  };
 
 
 
@@ -88,6 +104,99 @@ const Home = () => {
       description: "Provide opportunities for volunteers to contribute their time, skills, and resources to support Srila Prabhupada's disciples, whether through caregiving, companionship, or other forms of assistance."
     }
   ];
+  const teamMembers = [
+    {
+      name: "Glims Bond",
+      imageSrc: donner1,
+      donationAmount: "$256"
+    },
+    {
+      name: "Sharlok Bin",
+      imageSrc: donner2,
+      donationAmount: "$256"
+    },
+    {
+      name: "Pristly Hearbart",
+      imageSrc: donner3,
+      donationAmount: "$420"
+    },
+    {
+      name: "Glims Bond",
+      imageSrc: donner1,
+      donationAmount: "$256"
+    },
+    {
+      name: "Sharlok Bin",
+      imageSrc: donner2,
+      donationAmount: "$256"
+    },
+    {
+      name: "Pristly Hearbart",
+      imageSrc: donner3,
+      donationAmount: "$420"
+    }
+
+  ];
+  const volunteers = [
+    {
+      name: "Glims Bond",
+      imageSrc: donner1
+    },
+    {
+      name: "Sharlok Bin",
+      imageSrc: donner2
+    },
+    {
+      name: "Pristly Hearbart",
+      imageSrc: donner3
+    },
+    {
+      name: "Glims Bond",
+      imageSrc: donner1
+    },
+    {
+      name: "Sharlok Bin",
+      imageSrc: donner2
+    },
+    {
+      name: "Pristly Hearbart",
+      imageSrc: donner3
+    }
+  ];
+
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const toggleAccordion = (index) => {
+      setActiveIndex(activeIndex === index ? null : index);
+  };
+
+  const accordionItems = [
+    {
+        question: "In which state do you work most in Africa ?",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+    },
+    {
+        question: "How to donate on our site using your form ?",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+    },
+    {
+        question: "How to become a volunteer in Zambia state ?",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+    },
+    {
+        question: "How can I give my clothes and other products ?",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+    },
+    {
+        question: "How to become a volunteer in Zambia state ?",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+    },
+    {
+        question: "How to donate on our site using your form ?",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+    }
+];
+
 
   const navigate = useNavigate()
   return (
@@ -236,7 +345,7 @@ const Home = () => {
             <div className="col-lg-6">
               <div className="about-img">
                 <img src={prabhupadacare} alt="Image" style={{ borderRadius: '15px' }} />
-              
+
               </div>
             </div>
             <div className="col-lg-6">
@@ -298,7 +407,7 @@ const Home = () => {
               <div className="about-img">
                 <img src={prabhupadamission} alt="Image" style={{ borderRadius: '2rem' }} />
 
-            
+
               </div>
             </div>
           </div>
@@ -311,7 +420,7 @@ const Home = () => {
               <div className="about-img">
                 <img src={prabhupadavision} alt="Image" style={{ borderRadius: '2rem' }} />
 
-                
+
               </div>
             </div>
             <div className="col-lg-6">
@@ -327,116 +436,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="team-area pt-100 pb-70">
-        <div className="container">
-          <div className="section-title">
-            {/* <span className="top-title">Team Member</span> */}
-            <h2>Behind The Donor's Of </h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, perferendis facilis! Magni explicabo nam velit nulla officiis dolorum? Ducimus illum</p>
-          </div>
-          <div className="row">
-            <div className="col-lg-4 col-sm-6">
-              <div className="single-team">
-                <div className="team-img">
-                  <img src={donner1} alt="Image" />
-                  <ul className="team-link">
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-facebook" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-twitter" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-pinterest-alt" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-instagram" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="team-content">
-                  <h3>Glims Bond</h3>
-                  <span>Donate $256</span>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-sm-6">
-              <div className="single-team">
-                <div className="team-img">
-                  <img src={donner2} alt="Image" />
-                  <ul className="team-link">
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-facebook" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-twitter" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-pinterest-alt" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-instagram" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="team-content">
-                  <h3>Sharlok Bin</h3>
-                  <span>Donate $256</span>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-sm-6 offset-sm-3 offset-lg-0">
-              <div className="single-team">
-                <div className="team-img">
-                  <img src={donner3} alt="Image" />
-                  <ul className="team-link">
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-facebook" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-twitter" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-pinterest-alt" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-instagram" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="team-content">
-                  <h3>Pristly Hearbart</h3>
-                  <span>Donate $420</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
       <section className="what-we-do-area pt-100 pb-70">
         <div className="container">
           <div className="section-title">
@@ -622,7 +622,54 @@ const Home = () => {
           </div>
         </div>
       </section>
-
+      <section className="team-area pt-100 pb-70">
+        <div className="container">
+          <div className="section-title">
+            <h2>Behind The Donors Of</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, perferendis facilis! Magni explicabo nam velit nulla officiis dolorum? Ducimus illum</p>
+          </div>
+          <div className="row">
+            {teamMembers.map((member, index) => (
+              <div className="col-lg-4 col-sm-6" key={index}>
+                <div className="single-team">
+                  <div className="team-img">
+                    <img src={member.imageSrc} alt="Image" />
+                    <ul className="team-link">
+                      <li>
+                        <a href="#">
+                          <i className="bx bxl-facebook" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i className="bx bxl-twitter" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i className="bx bxl-pinterest-alt" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i className="bx bxl-instagram" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="team-content">
+                    <h3>{member.name}</h3>
+                    <span>Donate {member.donationAmount}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className='line' >
+          <p onClick={() => navigate("/donation")} style={{ color: "white" }}>Become a Donor <IoIosArrowRoundForward style={{ fontSize: '35px' }} /></p>
+        </div>
+      </section>
       <section className="help-people-area">
         <div className="container-fluid">
           <div className="section-title">
@@ -729,7 +776,7 @@ const Home = () => {
           <div className="row">
             <div className="col-lg-6 col-md-6">
               <div className="single-causes-box">
-                <img src={haridas} alt="Image" style={{height:'20rem'}} />
+                <img src={haridas} alt="Image" style={{ height: '20rem' }} />
                 <div className="single-causes-content">
                   <h3>
                     <a href="">HG Braj Hari Das
@@ -742,7 +789,7 @@ const Home = () => {
             </div>
             <div className="col-lg-6 col-md-6">
               <div className="single-causes-box">
-                <img src={mahavarahdas} alt="Image" style={{height:'20rem'}} />
+                <img src={mahavarahdas} alt="Image" style={{ height: '20rem' }} />
                 <div className="single-causes-content">
                   <h3>
                     <a href="causes-details-2.html">HG Mahavaraha Das
@@ -756,7 +803,7 @@ const Home = () => {
             </div>
             <div className="col-lg-6 col-md-6 offset-md-3 offset-lg-0">
               <div className="single-causes-box">
-                <img src={vaikunthpatidas} alt="Image" style={{height:'20rem'}}/>
+                <img src={vaikunthpatidas} alt="Image" style={{ height: '20rem' }} />
                 <div className="single-causes-content">
                   <h3>
                     <a href="causes-details-2.html">HG Vaikunthapati Das
@@ -770,7 +817,7 @@ const Home = () => {
             </div>
             <div className="col-lg-6 col-md-6 offset-md-3 offset-lg-0">
               <div className="single-causes-box">
-                <img src={srivarajbhumidas} alt="Image" style={{height:'20rem'}} />
+                <img src={srivarajbhumidas} alt="Image" style={{ height: '20rem' }} />
                 <div className="single-causes-content">
                   <h3>
                     <a href="causes-details-2.html">HG Vaikunthapati Das
@@ -788,107 +835,47 @@ const Home = () => {
       <section className="team-area pt-100 pb-70">
         <div className="container">
           <div className="section-title">
-            {/* <span className="top-title">Team Member</span> */}
-            <h2>Our Volunteer</h2>
-            </div>
-          <div className="row">
-            <div className="col-lg-4 col-sm-6">
-              <div className="single-team">
-                <div className="team-img">
-                  <img src={donner1} alt="Image" />
-                  <ul className="team-link">
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-facebook" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-twitter" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-pinterest-alt" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-instagram" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="team-content">
-                  <h3>Glims Bond</h3>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-sm-6">
-              <div className="single-team">
-                <div className="team-img">
-                  <img src={donner2} alt="Image" />
-                  <ul className="team-link">
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-facebook" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-twitter" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-pinterest-alt" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-instagram" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="team-content">
-                  <h3>Sharlok Bin</h3> 
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-sm-6 offset-sm-3 offset-lg-0">
-              <div className="single-team">
-                <div className="team-img">
-                  <img src={donner3} alt="Image" />
-                  <ul className="team-link">
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-facebook" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-twitter" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-pinterest-alt" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="bx bxl-instagram" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="team-content">
-                  <h3>Pristly Hearbart</h3>
-                </div>
-              </div>
-            </div>
+            <h2>Our Volunteers</h2>
           </div>
+          <div className="row">
+            {volunteers.map((volunteer, index) => (
+              <div className="col-lg-4 col-sm-6" key={index}>
+                <div className="single-team">
+                  <div className="team-img">
+                    <img src={volunteer.imageSrc} alt="Image" />
+                    <ul className="team-link">
+                      <li>
+                        <a href="#">
+                          <i className="bx bxl-facebook" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i className="bx bxl-twitter" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i className="bx bxl-pinterest-alt" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i className="bx bxl-instagram" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="team-content">
+                    <h3>{volunteer.name}</h3>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>;
+        <div className='line' >
+          <p onClick={() => navigate("/becomevolunteer")} style={{ color: "white" }}>Become a Volunteer <IoIosArrowRoundForward style={{ fontSize: '35px' }} /></p>
         </div>
       </section>
       <section className="volunteer-join-area volunteer-join-area-page ptb-100">
@@ -930,6 +917,39 @@ const Home = () => {
           </form>
         </div>
       </section>
+      
+      <section className="faq-area" style={{paddingTop:'5rem'}}>
+            <div className="container">
+                <div className="section-title">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, perferendis facilis! Magni explicabo nam velit nulla officiis dolorum? Ducimus illum</p>
+                </div>
+                <div className="row align-items-center">
+                    {accordionItems.map((item, index) => (
+                        <div className="col-lg-6 mt-4" key={index}>
+                            <div className="faq-accordion">
+                                <ul className="accordion">
+                                    <li className="accordion-item">
+                                        <a
+                                            className={`accordion-title ${activeIndex === index ? 'active' : ''}`}
+                                            href="javascript:void(0)"
+                                            onClick={() => toggleAccordion(index)}
+                                        >
+                                            <i className="bx bx-plus" />
+                                            {item.question}
+                                        </a>
+                                        <div className={`accordion-content ${activeIndex === index ? 'show' : ''}`}>
+                                            <p>{item.content}</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+
 
       <div className="partner-area ptb-100">
         <div className="container">

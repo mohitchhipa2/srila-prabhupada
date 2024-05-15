@@ -26,7 +26,7 @@ const Header = () => {
     <div>
 
       <header className="header-area">
-        
+
         <div className="navbar-area">
           <div className="mobile-nav">
             <div className="container">
@@ -39,7 +39,7 @@ const Header = () => {
                 <div className="sidebar-menu">
                   <a href="" className="burger-menu">
                     {/* <i style={{ fontSize: "35px" }} className="bx bx-menu" /> */}
-                    <AnchorTemporaryDrawer/>
+                    <AnchorTemporaryDrawer />
                   </a>
                 </div>
 
@@ -60,29 +60,35 @@ const Header = () => {
                       </a>
                     </li>
                     <li className="nav-item">
-                          <a onClick={() => navigate("/aboutus")} href="" className="nav-link">About Us</a>
-                        </li>
-
+                      <a onClick={() => navigate("/aboutus")} href="" className="nav-link">About Us</a>
+                    </li>
+                    <li className="nav-item">
+                      <a onClick={() => navigate("/events")} href="" className="nav-link">
+                        Success Stories
+                      </a>
+                    </li>
                     <li className="nav-item">
                       <a href="" className="nav-link">
                         Pages
                         <i className="bx bx-chevron-down" />
                       </a>
                       <ul className="dropdown-menu">
-                       
-                      
+
+
                         <li className="nav-item">
                           <a onClick={() => navigate("/team")} href="" className="nav-link">Team</a>
                         </li>
                         <li className="nav-item">
                           <a onClick={() => navigate("/volunteer")} href="" className="nav-link">
-                          Volunteer
+                            Volunteer
                           </a>
                         </li>
                         <li className="nav-item">
-                          <a onClick={() => navigate("/events")} href="" className="nav-link">
-                            Success Stories
+                          <a onClick={() => navigate("/causes")} href='' className="nav-link">
+                            Donor
+
                           </a>
+
                         </li>
                         <li className="nav-item">
                           <a onClick={() => navigate("/becomevolunteer")} href="" className="nav-link">Become a volunteer</a>
@@ -90,7 +96,28 @@ const Header = () => {
                         <li className="nav-item">
                           <a onClick={() => navigate("/implementationProcess")} href="" className="nav-link">Implementation Process</a>
                         </li>
-                       
+
+                        
+                      </ul>
+                    </li>
+                    <li className="nav-item">
+                      <a onClick={() => navigate("/services")} href="" className="nav-link">
+                        Key feature
+
+                      </a>
+
+                    </li>
+
+
+                    <li className="nav-item">
+                      <a onClick={() => navigate("/contactus")} href="" className="nav-link">Contact Us</a>
+                    </li>
+                    <li className="nav-item">
+                      <a href="" className="nav-link">
+                        others
+                        <i className="bx bx-chevron-down" />
+                      </a>
+                      <ul className="dropdown-menu">
                         <li className="nav-item">
                           <a href="" className="nav-link">
                             User
@@ -127,57 +154,6 @@ const Header = () => {
                           <a onClick={() => navigate("/error")} href="" className="nav-link">404 Error Page</a>
                         </li>
                       </ul>
-                    </li>
-                    <li className="nav-item">
-                      <a onClick={() => navigate("/services")} href="" className="nav-link">
-                        Key feature
-                        {/* <i className="bx bx-chevron-down" /> */}
-                      </a>
-                      {/* <ul className="dropdown-menu">
-                  <li className="nav-item">
-                    <a onClick={()=>navigate("/services")} href="" className="nav-link">Services</a>
-                  </li>
-                  <li className="nav-item">
-                    <a onClick={()=>navigate("/servicesdetails")} href="" className="nav-link">Service Details</a>
-                  </li>
-                </ul> */}
-                    </li>
-                    <li className="nav-item">
-                      <a onClick={() => navigate("/causes")} href='' className="nav-link">
-                        Donor
-                        {/* <i className="bx bx-chevron-down" /> */}
-                      </a>
-                      {/* <ul className="dropdown-menu">
-                  <li className="nav-item">
-                    <a onClick={()=>navigate("/causes")} href="" className="nav-link">Causes</a>
-                  </li>
-                  <li className="nav-item">
-                    <a onClick={()=>navigate("/causesdetails")} href="" className="nav-link">Causes Details</a>
-                  </li>
-                </ul> */}
-                    </li>
-                    {/* <li className="nav-item">
-                      <a href="" className="nav-link">
-                        Blog
-                        <i className="bx bx-chevron-down" />
-                      </a>
-                      <ul className="dropdown-menu">
-                        <li className="nav-item">
-                          <a href="blog-column-two.html" className="nav-link">Blog Column Two</a>
-                        </li>
-                        <li className="nav-item">
-                          <a href="blog-column-three.html" className="nav-link">Blog Column Three</a>
-                        </li>
-                        <li className="nav-item">
-                          <a href="blog-left-sidebar.html" className="nav-link">Blog Left Sidebar</a>
-                        </li>
-                        <li className="nav-item">
-                          <a href="blog-details.html" className="nav-link">Blog Details</a>
-                        </li>
-                      </ul>
-                    </li> */}
-                    <li className="nav-item">
-                      <a onClick={() => navigate("/contactus")} href="" className="nav-link">Contact Us</a>
                     </li>
                   </ul>
                   <div className="others-option">

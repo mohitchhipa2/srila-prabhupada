@@ -2,8 +2,11 @@ import React from 'react'
 import donner1 from '../assets/imgs/donner1.webp'
 import donner2 from '../assets/imgs/donner2.webp'
 import donner3 from '../assets/imgs/donner3.jpg'
+import { IoIosArrowRoundForward } from "react-icons/io";
+import { useNavigate } from 'react-router-dom'
 
 const Causes = () => {
+  const navigate = useNavigate()
   const teamMembers = [
     {
       name: 'Glims Bond',
@@ -113,6 +116,9 @@ const Causes = () => {
         </div>
       ))}
     </div>
+        </div>
+        <div className='line' >
+          <p onClick={() => navigate("/donation")} style={{ color: "white" }}>Become a Donor <IoIosArrowRoundForward style={{ fontSize: '35px' }} /></p>
         </div>
       </section>
 </div>

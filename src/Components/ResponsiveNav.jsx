@@ -31,8 +31,9 @@ export default function AnchorTemporaryDrawer() {
     const menuItems = [
         { name: 'Home', path: '/' },
         { name: 'About', path: '/aboutus' },
+        { name: 'Sucess stories', path: '/events' },
         { name: 'Key Features', path: '/services' },
-        { name: 'Donor', path: '/causes' },
+        
         { name: 'Contact Us', path: '/contactus' },
         { name: 'Donation', path: '/donation' }
     ];
@@ -58,6 +59,7 @@ export default function AnchorTemporaryDrawer() {
                 
             </List>
             <NestedList toggleDrawer={closeDrawer}/>
+            
         </Box>
     );
 

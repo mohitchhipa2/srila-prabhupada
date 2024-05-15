@@ -1,6 +1,42 @@
-import React from 'react'
+import React, { useState } from 'react'
+import AccordionTransition from './AccordionTransition'
 
 const Faq = () => {
+
+
+  const [activeIndex, setActiveIndex] = useState(null);
+
+    const toggleAccordion = (index) => {
+        setActiveIndex(activeIndex === index ? null : index);
+    };
+
+    const accordionItems = [
+      {
+          question: "In which state do you work most in Africa ?",
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+      },
+      {
+          question: "How to donate on our site using your form ?",
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+      },
+      {
+          question: "How to become a volunteer in Zambia state ?",
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+      },
+      {
+          question: "How can I give my clothes and other products ?",
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+      },
+      {
+          question: "How to become a volunteer in Zambia state ?",
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+      },
+      {
+          question: "How to donate on our site using your form ?",
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+      }
+  ];
+
   return (
     <div>
   <div className="sidebar-modal">
@@ -115,117 +151,37 @@ const Faq = () => {
     </div>
   </div>
   <section className="faq-area ptb-100">
-    <div className="container">
-      <div className="section-title">
-        <h2>Frequently Asked Questions</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, perferendis facilis! Magni explicabo nam velit nulla officiis dolorum? Ducimus illum</p>
-      </div>
-      <div className="row align-items-center">
-        <div className="col-lg-6">
-          <div className="faq-accordion mb-used">
-            <ul className="accordion">
-              <li className="accordion-item">
-                <a className="accordion-title active" href="javascript:void(0)">
-                  <i className="bx bx-plus" />
-                  In which state do you work most in Africa ?
-                </a>
-                <div className="accordion-content show">
-                  <p>Lorem, ipsum dolor sit amet How do you Startup? consectetur adipisicing elit. Accusamus ipsa error, excepturi, obcaecati aliquid veniam blanditiis quas voluptates maxime unde, iste minima dolores dolor perferendis facilis. How do you Startup blanditiis voluptates Lorem, ipsum dolor sit amet How do you Startup amet How do.</p>
+            <div className="container">
+                <div className="section-title">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, perferendis facilis! Magni explicabo nam velit nulla officiis dolorum? Ducimus illum</p>
                 </div>
-              </li>
-              <li className="accordion-item">
-                <a className="accordion-title" href="javascript:void(0)">
-                  <i className="bx bx-plus" />
-                  How to became a volunteer in Zambia state ?
-                </a>
-                <div className="accordion-content">
-                  <p>Lorem, ipsum dolor sit amet How do you Startup? consectetur adipisicing elit. Accusamus ipsa error, excepturi, obcaecati aliquid veniam blanditiis quas voluptates maxime unde, iste minima dolores dolor perferendis facilis. How do you Startup blanditiis voluptates Lorem, ipsum dolor sit amet How do you Startup amet How do.</p>
+                <div className="row align-items-center">
+                    {accordionItems.map((item, index) => (
+                        <div className="col-lg-6 mt-4" key={index}>
+                            <div className="faq-accordion">
+                                <ul className="accordion">
+                                    <li className="accordion-item">
+                                        <a
+                                            className={`accordion-title ${activeIndex === index ? 'active' : ''}`}
+                                            href="javascript:void(0)"
+                                            onClick={() => toggleAccordion(index)}
+                                        >
+                                            <i className="bx bx-plus" />
+                                            {item.question}
+                                        </a>
+                                        <div className={`accordion-content ${activeIndex === index ? 'show' : ''}`}>
+                                            <p>{item.content}</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    ))}
                 </div>
-              </li>
-              <li className="accordion-item">
-                <a className="accordion-title" href="javascript:void(0)">
-                  <i className="bx bx-plus" />
-                  How to donate on our site using your form ?
-                </a>
-                <div className="accordion-content">
-                  <p>Lorem, ipsum dolor sit amet How do you Startup? consectetur adipisicing elit. Accusamus ipsa error, excepturi, obcaecati aliquid veniam blanditiis quas voluptates maxime unde, iste minima dolores dolor perferendis facilis. How do you Startup blanditiis voluptates Lorem, ipsum dolor sit amet How do you Startup amet How do.</p>
-                </div>
-              </li>
-              <li className="accordion-item">
-                <a className="accordion-title" href="javascript:void(0)">
-                  <i className="bx bx-plus" />
-                  What and where are the headquarters of your company ?
-                </a>
-                <div className="accordion-content">
-                  <p>Lorem, ipsum dolor sit amet How do you Startup? consectetur adipisicing elit. Accusamus ipsa error, excepturi, obcaecati aliquid veniam blanditiis quas voluptates maxime unde, iste minima dolores dolor perferendis facilis. How do you Startup blanditiis voluptates Lorem, ipsum dolor sit amet How do you Startup amet How do.</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="col-lg-6">
-          <div className="faq-accordion">
-            <ul className="accordion">
-              <li className="accordion-item">
-                <a className="accordion-title active" href="javascript:void(0)">
-                  <i className="bx bx-plus" />
-                  In which state do you work most in Africa ?
-                </a>
-                <div className="accordion-content">
-                  <p>Lorem, ipsum dolor sit amet How do you Startup? consectetur adipisicing elit. Accusamus ipsa error, excepturi, obcaecati aliquid veniam blanditiis quas voluptates maxime unde, iste minima dolores dolor perferendis facilis. How do you Startup blanditiis voluptates Lorem, ipsum dolor sit amet How do you Startup amet How do.</p>
-                </div>
-              </li>
-              <li className="accordion-item">
-                <a className="accordion-title" href="javascript:void(0)">
-                  <i className="bx bx-plus" />
-                  How to donate on our site using your form ?
-                </a>
-                <div className="accordion-content">
-                  <p>Lorem, ipsum dolor sit amet How do you Startup? consectetur adipisicing elit. Accusamus ipsa error, excepturi, obcaecati aliquid veniam blanditiis quas voluptates maxime unde, iste minima dolores dolor perferendis facilis. How do you Startup blanditiis voluptates Lorem, ipsum dolor sit amet How do you Startup amet How do.</p>
-                </div>
-              </li>
-              <li className="accordion-item">
-                <a className="accordion-title" href="javascript:void(0)">
-                  <i className="bx bx-plus" />
-                  How to became a volounteer in Zambia state ?
-                </a>
-                <div className="accordion-content">
-                  <p>Lorem, ipsum dolor sit amet How do you Startup? consectetur adipisicing elit. Accusamus ipsa error, excepturi, obcaecati aliquid veniam blanditiis quas voluptates maxime unde, iste minima dolores dolor perferendis facilis. How do you Startup blanditiis voluptates Lorem, ipsum dolor sit amet How do you Startup amet How do.</p>
-                </div>
-              </li>
-              <li className="accordion-item">
-                <a className="accordion-title" href="javascript:void(0)">
-                  <i className="bx bx-plus" />
-                  How can I give my clothes and other products ?
-                </a>
-                <div className="accordion-content">
-                  <p>Lorem, ipsum dolor sit amet How do you Startup? consectetur adipisicing elit. Accusamus ipsa error, excepturi, obcaecati aliquid veniam blanditiis quas voluptates maxime unde, iste minima dolores dolor perferendis facilis. How do you Startup blanditiis voluptates Lorem, ipsum dolor sit amet How do you Startup amet How do.</p>
-                </div>
-              </li>
-              <li className="accordion-item">
-                <a className="accordion-title" href="javascript:void(0)">
-                  <i className="bx bx-plus" />
-                  How to became a volounteer in Zambia state ?
-                </a>
-                <div className="accordion-content">
-                  <p>Lorem, ipsum dolor sit amet How do you Startup? consectetur adipisicing elit. Accusamus ipsa error, excepturi, obcaecati aliquid veniam blanditiis quas voluptates maxime unde, iste minima dolores dolor perferendis facilis. How do you Startup blanditiis voluptates Lorem, ipsum dolor sit amet How do you Startup amet How do.</p>
-                </div>
-              </li>
-              <li className="accordion-item">
-                <a className="accordion-title" href="javascript:void(0)">
-                  <i className="bx bx-plus" />
-                  How to donate on our site using your form ?
-                </a>
-                <div className="accordion-content">
-                  <p>Lorem, ipsum dolor sit amet How do you Startup? consectetur adipisicing elit. Accusamus ipsa error, excepturi, obcaecati aliquid veniam blanditiis quas voluptates maxime unde, iste minima dolores dolor perferendis facilis. How do you Startup blanditiis voluptates Lorem, ipsum dolor sit amet How do you Startup amet How do.</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+            </div>
+        </section>
+
   <section className="contact-area faq-contact-area pb-100">
     <div className="container">
       <div className="row">
